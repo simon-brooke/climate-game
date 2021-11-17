@@ -2,7 +2,8 @@
   :description "A game about avoiding climate catastrophe"
   :license {:name "GNU General Public License,version 2.0 or (at your option) any later version"
             :url "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"}
-  :dependencies [[org.clojure/clojure "1.10.3"]]
+  :dependencies [[jme-clj "0.1.13"]
+                 [org.clojure/clojure "1.10.3"]]
   :main ^:skip-aot climate-game.core
   :plugins [[lein-cloverage "1.2.2"]
             [lein-codox "0.10.7-cloverage"]]
