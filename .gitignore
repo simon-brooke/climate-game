@@ -13,3 +13,9 @@ pom.xml.asc
 .hg/
 .clj-kondo/*
 .lsp/*
+
+*.log
+
+.calva/*
+
+*.so
