@@ -1,7 +1,10 @@
 (defproject journeyman-cc/climate-game "0.1.0-SNAPSHOT"
+  :cloverage {:output "docs/cloverage"}
+  :codox {:metadata    {:doc        "**TODO**: write docs"
+                        :doc/format :markdown}
+          :output-path "docs/codox"
+          :source-uri  "https://github.com/simon-brooke/climate-game/blob/master/{filepath}#L{line}"}
   :description "A game about avoiding climate catastrophe"
-  :license {:name "GNU General Public License,version 2.0 or (at your option) any later version"
-            :url "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"}
   :dependencies [[jme-clj "0.1.13"]
                  [com.jme3/jmonkeyengine3 "3.0.0-SNAPSHOT"]
                  [com.jme3/jME3-testdata "3.0.0-SNAPSHOT"]
@@ -34,13 +37,19 @@
                  [com.jme3/xmlpull-xpp3 "3.0.0-SNAPSHOT"]
                  [org.clojure/clojure "1.10.3"]]
   :java-source-paths ["src/java"]
+  :license {:name "GNU General Public License,version 2.0 or (at your option) any later version"
+            :url  "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"}
   :main ^:skip-aot cc.journeyman.climate-game.core
   :plugins [[lein-cloverage "1.2.2"]
-            [lein-codox "0.10.7-cloverage"]]
-  :profiles {:uberjar {:aot :all
+            ;; lein-codox "0.10.7-cloverage" is my personal hacked version which
+            ;; integrates cloverage test coverage reports into codox autput. This
+            ;; is useful but you won't have it, so not part of the official 
+            ;; build.
+            ;; [lein-codox "0.10.7-cloverage"]
+            [lein-codox "0.10.8"]]
+  :profiles {:uberjar {:aot      :all
                        :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}}
-  :repositories {"oss-sonatype"
-                 "https://oss.sonatype.org/content/repositories/snapshots/"}
+  :repositories {"oss-sonatype" "https://oss.sonatype.org/content/repositories/snapshots/"}
   :source-paths      ["src/clj"]
   :target-path "target/%s"
   :url "http://example.com/FIXME")
