@@ -42,3 +42,4 @@ Additionally, so-called biofuels are produced from crops grown on land which wou
 
 ## Concrete/Masonry
 
+As far as I know there is as yet no 'green' method of producing cement, and producing cement will always have a very high energy cost. It's therefore likely to become a very significantly more expensive material. This implies that things currently built with concrete are more likely to be built with traditional masonry (cut stone blocks) or with timber. Whether concrete will be more or less expensive than ceramic bricks I don't know, but both will be significantly more expensive than they are now.
