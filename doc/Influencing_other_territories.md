@@ -4,7 +4,7 @@ Broadly you can influence other territories by three main methods (and algorithm
 
 ## Diplomacy
 
-What this fundamentally comes down to is bribing territories into doing what you want. It will cost money, probably serious money. Diplomacy has no carbon cost, and no real downside. Poorer territories will generally be cheaper to buy than richer ones, red territories will generally be cheaper to buy than blue or green ones.
+What this fundamentally comes down to is bribing territories into doing what you want. It will cost money, probably serious money. You can also donate aid or send rescuers to a catastrophic event in another player's territory, which will also be recognised by algorithmic players as a friendly gesture (this will probably be cheaper in the long run). Diplomacy has no carbon cost, and no real downside. Poorer territories will generally be cheaper to buy than richer ones, red territories will generally be cheaper to buy than blue or green ones.
 
 ## Interference
 
@@ -16,4 +16,3 @@ You can attempt to impose the government you want on a territory by military int
 
 Military intervention has huge carbon cost, and a war involving both America and China, or any four territories, is essentially game over everyone loses.
 
-### 

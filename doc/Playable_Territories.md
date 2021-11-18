@@ -1,4 +1,4 @@
-## Playable Territories
+# Playable Territories
 
 The following territories will be playable (i.e. controllable by a player) in the game. It should be possible to play in a small-group collaborative multiplayer arrangement, where different players control different playable territories.
 
@@ -186,7 +186,7 @@ Average productivity, some surplus, much use of fossil fuels and fertilisers.
 
 ##### Energy
 
-
+Significant exports of fossil fuels. I don't really know enough to know how widespread private motor transport is, or how good the rail/mass transit network is.
 
 ##### Industry
 
