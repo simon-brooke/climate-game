@@ -1,10 +1,13 @@
 package aaronperkins.planeteg;
 
+import com.jme3.math.FastMath;
 import com.jme3.math.Vector3f;
 import com.jme3.scene.Mesh;
 import com.jme3.scene.VertexBuffer.Type;
+import com.jme3.terrain.heightmap.AbstractHeightMap;
+import com.jme3.terrain.heightmap.ImageBasedHeightMap;
+import com.jme3.texture.Texture;
 import com.jme3.util.BufferUtils;
-import com.jme3.math.FastMath;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -167,6 +170,21 @@ public class PlanetMeshGen {
      */
     public void generateHeightmap( ) {
          generateHeightmap( 750, 19580427, 30, 90, 25000, .8f, .3f );
+    }
+
+    /**
+     * Generate a heightmap from this heightmapImage. Added by simon@journeyman.cc, so that we can actually
+     * get planet Earth.
+     * 
+     * NOTE: This doesn't even nearly work yet.
+     * 
+     * @param heightmapImage the path of the asset to use: expected to be a monochrome heightmap
+     */
+    public AbstractHeightMap generateHeightmap( Texture heightmapImage) {
+        AbstractHeightMap heightmap = new ImageBasedHeightMap(heightmapImage.getImage(), 1f);
+        heightmap.load();
+
+        return heightmap;
     }
     
 

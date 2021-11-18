@@ -4,7 +4,7 @@ A game about avoiding climate catastrophe.
 
 ## Documentation
 
-There is documentation [here](https://simon-brooke.github.io/climate-game/)
+There is documentation [here](https://simon-brooke.github.io/climate-game/).
 
 ## Warning
 

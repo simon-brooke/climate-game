@@ -10,9 +10,11 @@
 (defn -main
   "This should be pretty simple."
   [& args]
-  (let [app (ClimateGameApp.)]
+  (let [app (ClimateGameApp.)
+        settings (app-settings true :title "The Climate Game")]
     (try
-      (.setSettings app (app-settings true :title "The Climate Game"))
+      (.setSettingsDialogImage settings "images/climategamesplash.png")
+      (.setSettings app settings)
       (start app)
       (catch Exception any
         (println (.getMessage any))
